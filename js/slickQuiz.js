@@ -279,7 +279,7 @@
 
                                 // If question has >1 true answers and is not a select any, use checkboxes; otherwise, radios
                                 var input = '<input id="' + optionId + '" name="' + inputName +
-                                            '" type="' + inputType + '" /> ';
+                                            '" type="' + inputType + '" class="' + checkAnswerClass + '"/> ';
 
                                 var optionLabel = '<label for="' + optionId + '">' + answer.option + '</label>';
 
@@ -315,12 +315,12 @@
                         }
 
                         // If we're not showing responses per question, show next question button and make it check the answer too
-                        if (!plugin.config.perQuestionResponseMessaging) {
-                            questionHTML.append('<a href="#" class="button ' + nextQuestionClass + ' ' + checkAnswerClass + '">' + nextText + '</a>');
-                        } else {
+                        //if (!plugin.config.perQuestionResponseMessaging) {
+                            questionHTML.append('<a href="#" class="button ' + nextQuestionClass + '">' + nextText + '</a>');
+                       /* } else {
                             questionHTML.append('<a href="#" class="button ' + nextQuestionClass + '">' + nextText + '</a>');
                             questionHTML.append('<a href="#" class="button ' + checkAnswerClass + '">' + plugin.config.checkAnswerText + '</a>');
-                        }
+                        }*/
 
                         // Append question & answers to quiz
                         quiz.append(questionHTML);
