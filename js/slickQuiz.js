@@ -254,7 +254,7 @@
                         }
 
                         // Now let's append the answers with checkboxes or radios depending on truth count
-                        var answerHTML = $('<ul class="' + answersClass + '"></ul>');
+                        var answerHTML = $('<ul class="btn-group ' + answersClass + '"></ul>');
 
                         // Get the answers
                         var answers = plugin.config.randomSortAnswers ?
@@ -283,7 +283,8 @@
 
                                 var optionLabel = '<label for="' + optionId + '">' + answer.option + '</label>';
 
-                                var answerContent = $('<li class = "li-answer"></li>')
+                                var answerContent = $('<li class = "div-answer btn btn-info btn-lg"></li>')
+                                // var answerContent = $('<div class="col-md-6 div-answer"></div>')
                                     .append(input)
                                     .append(optionLabel);
                                 answerHTML.append(answerContent);
