@@ -4,6 +4,7 @@ $(function () {
     $('#slickQuiz').slickQuiz({
           numberOfQuestions: 10,
           randomSortQuestions: true,
-          randomSortAnswers: true
+          randomSortAnswers: true,
+          displayQuestionNumber: false
     });
 });

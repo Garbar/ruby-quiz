@@ -112,6 +112,33 @@ var quizJSON = {
             ],
             "correct": "<p><span>Good Job!</span> You must be very observant!</p>",
             "incorrect": "<p><span>ERRRR!</span> What planet Earth are <em>you</em> living on?!?</p>" // no comma here
+        },
+              { // Question 12
+            "q": ".duplicable?",
+            "a": [
+                {"option": "Rails",    "correct": true},
+                {"option": "Ruby",     "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Good Job!</span> You must be very observant!</p>",
+            "incorrect": "<p><span>ERRRR!</span> What planet Earth are <em>you</em> living on?!?</p>" // no comma here
+        },
+              { // Question 13
+            "q": "Array.wrap(nil)     # => [] </br> Array.wrap([1, 2, 3]) # => [1, 2, 3]</br> Array.wrap(0)    # => [0]",
+            "a": [
+                {"option": "Rails",    "correct": true},
+                {"option": "Ruby",     "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Good Job!</span> You must be very observant!</p>",
+            "incorrect": "<p><span>ERRRR!</span> What planet Earth are <em>you</em> living on?!?</p>" // no comma here
+        },
+                      { // Question 14
+            "q": "'hello'.at(4)  # => 'o'",
+            "a": [
+                {"option": "Rails",    "correct": true},
+                {"option": "Ruby",     "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Good Job!</span> You must be very observant!</p>",
+            "incorrect": "<p><span>ERRRR!</span> What planet Earth are <em>you</em> living on?!?</p>" // no comma here
         } // no comma here
     ]
 };
