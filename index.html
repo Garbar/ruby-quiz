@@ -4,20 +4,40 @@
         <meta content="text/html; charset=utf-8" http-equiv="content-type">
 
         <title>SlickQuiz Demo</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
         <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
         <link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
     </head>
 
     <body id="slickQuiz">
+    <div class="container" style="width: 600px">
+          <div class="text-center">
+        <br>
+        <br>
+        <a href="http://railshurts.com/">
+          <img class="center-block" src="css/site-logo.png" width="60px">
+          <h5 style="text-align: center;">
+            RAILS HURTS
+          </h5>
+        </a>
+        <br>
+      </div>
+      <div class="well">
         <h1 class="quizName"><!-- where the quiz name goes --></h1>
 
-        <div class="quizArea">
+        <div class="quizArea lead text-center">
             <div class="quizHeader">
                 <!-- where the quiz main copy goes -->
 
-                <a class="button startQuiz" href="#">Get Started!</a>
+                <a class="button startQuiz btn btn-success" href="#">Get Started!</a>
             </div>
 
             <!-- where the quiz gets built -->
@@ -32,7 +52,8 @@
                 <!-- where the quiz result copy goes -->
             </div>
         </div>
-
+</div>
+</div>
         <script src="js/jquery.js"></script>
         <script src="js/slickQuiz-config.js"></script>
         <script src="js/slickQuiz.js"></script>
