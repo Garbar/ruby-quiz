@@ -298,7 +298,7 @@
                             // Now let's append the correct / incorrect response messages
                             var responseHTML = $('<ul class="' + responsesClass + '"></ul>');
                             responseHTML.append('<li class="bg-success ' + correctResponseClass + '">' + question.correct + '</li>');
-                            responseHTML.append('<li class="' + incorrectResponseClass + '">' + question.incorrect + '</li>');
+                            responseHTML.append('<li class="bg-danger ' + incorrectResponseClass + '">' + question.incorrect + '</li>');
 
                             // Append responses to question
                             questionHTML.append(responseHTML);
