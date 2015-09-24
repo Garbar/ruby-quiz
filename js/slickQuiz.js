@@ -15,7 +15,7 @@
         var plugin   = this,
             $element = $(element),
             _element = '#' + $element.attr('id'),
-
+            statistics = [],
             defaults = {
                 checkAnswerText:  'Check My Answer!',
                 nextQuestionText: 'Next &raquo;',
@@ -292,7 +292,7 @@
                         }
 
                         // Append answers to question
-                        questionHTML.append(answerHTML);
+                        questionHTML.append(answerHTML).attr('data-question-id', question.id);
 
                         // If response messaging is NOT disabled, add it
                         if (plugin.config.perQuestionResponseMessaging || plugin.config.completionResponseMessaging) {
@@ -373,6 +373,7 @@
 
                 if (plugin.config.events &&
                         plugin.config.events.onStartQuiz) {
+                    statistics = [];
                     plugin.config.events.onStartQuiz.apply (null, []);
                 }
             },
@@ -424,6 +425,7 @@
                     answerLIs     = questionLI.find(_answers + ' li'),
                     answerSelects = answerLIs.find('input:checked'),
                     questionIndex = parseInt(questionLI.attr('id').replace(/(question)/, ''), 10),
+                    questionId = parseInt(questionLI.attr('data-question-id'), 10),
                     answers       = questions[questionIndex].a,
                     selectAny     = questions[questionIndex].select_any ? questions[questionIndex].select_any : false;
 
@@ -463,7 +465,7 @@
 
                 // Verify all/any true answers (and no false ones) were submitted
                 var correctResponse = plugin.method.compareAnswers(trueAnswers, selectedAnswers, selectAny);
-
+                statistics.push({id: questionId, result: correctResponse});
                 if (correctResponse) {
                     questionLI.addClass(correctClass);
                 } else {
@@ -641,7 +643,8 @@
                         plugin.config.events.onCompleteQuiz) {
                     plugin.config.events.onCompleteQuiz.apply (null, [{
                         questionCount: questionCount,
-                        score: score
+                        score: score,
+                        stat: statistics
                     }]);
                 }
             },
