@@ -16,6 +16,7 @@ var quizJSON = {
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
             "q": "with_options",
+            "id": 1,
             "a": [
                 {"option": "Rails",      "correct": true},
                 {"option": "Ruby",     "correct": false} // no comma here
@@ -25,6 +26,7 @@ var quizJSON = {
         },
         { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
             "q": "reverse_merge",
+            "id": 2,
             "a": [
                 {"option": "Ruby",               "correct": false},
                 {"option": "Rails",      "correct": true} // no comma here
@@ -34,6 +36,7 @@ var quizJSON = {
         },
         { // Question 3 - Multiple Choice, Multiple True Answers, Select All
             "q": "DateTime.current",
+            "id": 3,
             "a": [
                 {"option": "Ruby",                  "correct": false},
                 {"option": "Rails",          "correct": true} // no comma here
@@ -43,6 +46,7 @@ var quizJSON = {
         },
         { // Question 4
             "q": " Array(foo: :bar)      # => [[:foo, :bar]]",
+            "id":  4,
             "a": [
                 {"option": "Ruby",     "correct": true},
                 {"option": "Rails",   "correct": false} // no comma here
@@ -52,6 +56,7 @@ var quizJSON = {
         },
                 { // Question 5
             "q": ".to_json",
+            "id":  5,
             "a": [
                 {"option": "Ruby",     "correct": true},
                 {"option": "Rails",   "correct": false} // no comma here
@@ -61,6 +66,7 @@ var quizJSON = {
         },
                 { // Question 6
             "q": "Date.today",
+            "id":  6,
             "a": [
                 {"option": "Ruby",     "correct": true},
                 {"option": "Rails",   "correct": false} // no comma here
@@ -70,6 +76,7 @@ var quizJSON = {
         },
                 { // Question 7
             "q": "a.cycle { |x| puts x }     # print, a, b, c, a, b, c,.. forever..",
+            "id":  7,
             "a": [
                 {"option": "Rails",     "correct": false},
                 {"option": "Ruby",   "correct": true} // no comma here
@@ -79,6 +86,7 @@ var quizJSON = {
         },
                 { // Question 8
             "q": "Time.now",
+            "id":  8,
             "a": [
                 {"option": "Ruby",     "correct": true},
                 {"option": "Rails",   "correct": false} // no comma here
@@ -88,6 +96,7 @@ var quizJSON = {
         },
                 { // Question 9
             "q": ".downcase!",
+            "id":  9,
             "a": [
                 {"option": "Ruby",     "correct": true},
                 {"option": "Rails",   "correct": false} // no comma here
@@ -97,6 +106,7 @@ var quizJSON = {
         },
                 { // Question 10
             "q": "class_attribute",
+            "id": 10,
             "a": [
                 {"option": "Rails",     "correct": true},
                 {"option": "Ruby",   "correct": false} // no comma here
@@ -106,6 +116,7 @@ var quizJSON = {
         },
         { // Question 11
             "q": "alias_attribute",
+            "id": 11,
             "a": [
                 {"option": "Rails",    "correct": true},
                 {"option": "Ruby",     "correct": false} // no comma here
@@ -115,6 +126,7 @@ var quizJSON = {
         },
               { // Question 12
             "q": ".duplicable?",
+            "id": 12,
             "a": [
                 {"option": "Rails",    "correct": true},
                 {"option": "Ruby",     "correct": false} // no comma here
@@ -124,6 +136,7 @@ var quizJSON = {
         },
               { // Question 13
             "q": "Array.wrap(nil)     # => [] </br> Array.wrap([1, 2, 3]) # => [1, 2, 3]</br> Array.wrap(0)    # => [0]",
+            "id": 13,
             "a": [
                 {"option": "Rails",    "correct": true},
                 {"option": "Ruby",     "correct": false} // no comma here
@@ -133,6 +146,7 @@ var quizJSON = {
         },
                       { // Question 14
             "q": "'hello'.at(4)  # => 'o'",
+            "id": 14,
             "a": [
                 {"option": "Rails",    "correct": true},
                 {"option": "Ruby",     "correct": false} // no comma here
