@@ -240,7 +240,7 @@
                         } else {
                             formatQuestion = question.q;
                         }
-                        questionHTML.append('<h3>' + formatQuestion + '</h3>');
+                        questionHTML.append('<h2>' + formatQuestion + '</h2>');
 
                         // Count the number of true values
                         var truths = 0;
@@ -283,7 +283,7 @@
 
                                 var optionLabel = '<label for="' + optionId + '">' + answer.option + '</label>';
 
-                                var answerContent = $('<li></li>')
+                                var answerContent = $('<li class = "li-answer"></li>')
                                     .append(input)
                                     .append(optionLabel);
                                 answerHTML.append(answerContent);
@@ -298,7 +298,7 @@
                             // Now let's append the correct / incorrect response messages
                             var responseHTML = $('<ul class="' + responsesClass + '"></ul>');
                             responseHTML.append('<li class="bg-success ' + correctResponseClass + '">' + question.correct + '</li>');
-                            responseHTML.append('<li class="bg-danger ' + incorrectResponseClass + '">' + question.incorrect + '</li>');
+                            responseHTML.append('<li class="' + incorrectResponseClass + '">' + question.incorrect + '</li>');
 
                             // Append responses to question
                             questionHTML.append(responseHTML);
